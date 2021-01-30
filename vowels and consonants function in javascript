@@ -1,0 +1,16 @@
+function vowelsAndConsonants(s) {
+    var i;
+    var j=s.length;
+    var arr=s.split('');
+    for(i=0;i<s.length;i++){
+        if(/[aeiou]/.test(arr[i])){
+            console.log(arr[i]);
+        }
+        else{
+            arr[j++]=arr[i];
+        }
+    }
+    for(j=s.length;j<arr.length;j++){
+        console.log(arr[j]);
+    }
+}
